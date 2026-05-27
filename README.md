@@ -40,7 +40,7 @@ Analysis of customer behavior, retention, and lifetime value for an e-commerce c
 
 **📈 Visualization:**
 
-![Customer Churn Analysis](/3_customer_churn_cohort_year.png)
+![Customer Churn Analysis](/2_customer_churn_cohort_year.png)
 
 📊 **Key Findings:**  
 - Cohort churn stabilizes at ~90% after 2-3 years, indicating a predictable long-term retention pattern.  
