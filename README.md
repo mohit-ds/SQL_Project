@@ -52,6 +52,32 @@ Analysis of customer behavior, retention, and lifetime value for an e-commerce c
 - Re-engage high-value churned customers by focusing on targeted win-back campaigns rather than broad retention efforts, as reactivating valuable users may yield higher ROI.  
 - Predict & preempt churn risk and use customer-specific warning indicators to proactively intervene with at-risk users before they lapse.
 
+### 3. Customer Revenue by Cohort
+**🖥️ Query**: [2_cohort_analysis.sql](/cohort_analysis.sql)
+
+- Tracked revenue and customer count per cohorts
+- Cohorts were grouped by year of first purchase
+- Analyzed customer revenue at a cohort level
+
+**📈 Visualization:**
+
+> ⚠️ Note: This only includes 2 charts. 
+
+Customer Revenue by Cohort (Adjusted for time in market) - First Purchase Date 
+![Customer Revenue by Cohort (Adjusted for time in market) - First Purchase Date](/5.2_customer_revenue_normalized.png)
+
+![Investigate Monthly Revenue & Customer Trends (3 Month Rolling Average)](/5.2_monthly_revenue_customers_3mo.png)
+
+📊 **Key Findings:**  
+- Customer revenue is declining, older cohorts (2016-2018) spent ~$2,800+, while 2024 cohort spending dropped to ~$1,970.  
+- Revenue and customers peaked in 2022-2023, but both are now trending downward in 2024.  
+- High volatility in revenue and customer count, with sharp drops in 2020 and 2024, signaling retention challenges.  
+
+💡 **Business Insights:**  
+- Boost retention & re-engagement by targeting recent cohorts (2022-2024) with personalized offers to prevent churn.  
+- Stabilize revenue fluctuations and introduce loyalty programs or subscriptions to ensure consistent spending.  
+- Investigate cohort differences by applying successful strategies from high-spending cohorts (2016-2018) to newer ones.
+
 ## Strategic Recommendations
 
 1. **Customer Value Optimization** (Customer Segmentation)
@@ -60,9 +86,14 @@ Analysis of customer behavior, retention, and lifetime value for an e-commerce c
    - Design price-sensitive promotions for low-value segment to increase purchase frequency
 
 . **Retention & Churn Prevention** (Customer Retention)
-  2 - Strengthen first 1-2 year engagement with onboarding incentives and loyalty rewards
+ 2. - Strengthen first 1-2 year engagement with onboarding incentives and loyalty rewards
    - Focus on targeted win-back campaigns for high-value churned customers
    - Implement proactive intervention system for at-risk customers before they lapse
+
+3. **Cohort Performance Strategy** (Customer Revenue by Cohort)
+   - Target 2022-2024 cohorts with personalized re-engagement offers
+   - Implement loyalty/subscription programs to stabilize revenue fluctuations
+   - Apply successful strategies from high-spending 2016-2018 cohorts to newer customers   
 
 ## Technical Details
 - **Database:** PostgreSQL
